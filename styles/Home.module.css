@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/ftl5xdg.css");
+@import url("https://use.typekit.net/ftl5xdg.css");
 
 * {
   padding: 0;
@@ -9,12 +10,22 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #fdf5aa;
+  background-color: #003c43;
 }
 #header {
   padding: 15px;
   width: inherit;
   height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#nav {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #title {
@@ -23,7 +34,7 @@
   font-family: "hwt-mardell";
   font-weight: 400;
   font-style: normal;
-  color: #113f67;
+  color: #e3fef7;
 }
 
 #subtitle {
@@ -31,4 +42,11 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+#subtitle > p {
+  color: #e3fef7;
+  font-size: 22px;
+  font-family: "cofo-sans-mono-variable", sans-serif;
+  font-variation-settings: "wght" 400;
 }
